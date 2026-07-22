@@ -10,7 +10,7 @@
     *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif} .shell{width:min(1040px,100%);margin:auto;padding:40px 28px 56px} header{display:flex;align-items:flex-start;justify-content:space-between;gap:24px;margin-bottom:28px}.eyebrow{color:var(--blue);font-size:14px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;margin:0 0 6px}h1{font-size:clamp(30px,5vw,46px);line-height:1.08;letter-spacing:-.035em;margin:0 0 10px}header p{margin:0;color:var(--muted);max-width:620px}
     form{display:grid;grid-template-columns:1fr auto;gap:12px;padding:12px;background:var(--surface);border:1px solid var(--border);border-radius:12px;box-shadow:var(--shadow)}label{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}input{min-width:0;width:100%;height:48px;border:1px solid var(--border);border-radius:8px;background:var(--bg);color:var(--text);font:inherit;padding:0 14px;outline:none}input:focus{border-color:var(--blue);box-shadow:0 0 0 3px var(--blueSoft)}button{height:48px;border:0;border-radius:8px;padding:0 22px;background:var(--blue);color:white;font:700 15px/1 system-ui;cursor:pointer}button:hover{filter:brightness(.96)}button:disabled{opacity:.65;cursor:wait}button:focus-visible,a:focus-visible{outline:3px solid var(--blue);outline-offset:3px}.helper{font-size:14px;color:var(--muted);margin:10px 4px 0}.statusline{display:none;align-items:center;gap:10px;margin:22px 0 0;color:var(--muted)}.statusline.show{display:flex}.spinner{width:18px;height:18px;border:2px solid var(--border);border-top-color:var(--blue);border-radius:50%;animation:spin .8s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}@media(prefers-reduced-motion:reduce){.spinner{animation:none;border-top-color:var(--border)}}
     #summary{display:none;margin-top:24px;padding:16px 18px;border:1px solid var(--border);border-radius:10px;background:var(--surface)}#summary.show{display:flex;align-items:center;justify-content:space-between;gap:16px}#summary strong{display:block;font-size:18px}#summary span{color:var(--muted);font-size:14px}#whoisLink{color:var(--blue);font-weight:700;text-decoration:none;white-space:nowrap}#whoisLink:hover{text-decoration:underline}.summaryActions{display:flex;align-items:center;gap:16px;flex:none;flex-wrap:wrap}.btnGhost{width:auto;min-height:38px;padding:0 14px;background:var(--bg);color:var(--text);border:1px solid var(--border);border-radius:8px;font:700 14px/1 system-ui;cursor:pointer;white-space:nowrap}.btnGhost:hover{background:var(--surface2);filter:none}
-    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:16px}.card{border:1px solid var(--border);border-radius:12px;background:var(--surface);padding:20px;min-height:180px}.card.span2{grid-column:1/-1;min-height:0}.dim{color:var(--muted)}.cardHead{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:16px}.card h2{font-size:18px;margin:0}.card .sub{font-size:14px;color:var(--muted);margin:2px 0 0}.badge{display:inline-flex;align-items:center;gap:6px;padding:4px 8px;border-radius:999px;font-size:12px;font-weight:750}.badge.ok{color:var(--green);background:var(--greenSoft)}.badge.bad{color:var(--red);background:var(--redSoft)}.badge.warn{color:var(--orange);background:var(--orangeSoft)}.badge.wait{color:var(--muted);background:var(--surface2)}.dot{width:7px;height:7px;border-radius:50%;background:currentColor}.results{margin:0;padding:0;list-style:none}.results li{padding:8px 0;border-top:1px solid var(--border);overflow-wrap:anywhere}.results li:first-child{border-top:0;padding-top:0}.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:14px}.rtype{color:var(--muted);font-size:12px;font-weight:700;letter-spacing:.03em;margin-right:4px}.results li.group-gap{margin-top:14px;border-top:0}.empty{color:var(--muted);font-size:14px}.meta{display:grid;grid-template-columns:112px 1fr;gap:8px 12px;font-size:14px}.meta dt{color:var(--muted)}.meta dd{margin:0;overflow-wrap:anywhere}.errorBox{display:none;margin-top:16px;padding:14px 16px;border:1px solid var(--red);border-radius:8px;background:var(--redSoft);color:var(--red)}.errorBox.show{display:block}footer{margin-top:22px;color:var(--muted);font-size:13px}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:16px}.card{border:1px solid var(--border);border-radius:12px;background:var(--surface);padding:20px;min-height:180px}.card.span2{grid-column:1/-1;min-height:0}.dim{color:var(--muted)}.cardNote{font-size:13px;color:var(--muted);margin:12px 0 0}.cardHead{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:16px}.card h2{font-size:18px;margin:0}.card .sub{font-size:14px;color:var(--muted);margin:2px 0 0}.badge{display:inline-flex;align-items:center;gap:6px;padding:4px 8px;border-radius:999px;font-size:12px;font-weight:750}.badge.ok{color:var(--green);background:var(--greenSoft)}.badge.bad{color:var(--red);background:var(--redSoft)}.badge.warn{color:var(--orange);background:var(--orangeSoft)}.badge.wait{color:var(--muted);background:var(--surface2)}.dot{width:7px;height:7px;border-radius:50%;background:currentColor}.results{margin:0;padding:0;list-style:none}.results li{padding:8px 0;border-top:1px solid var(--border);overflow-wrap:anywhere}.results li:first-child{border-top:0;padding-top:0}.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:14px}.rtype{color:var(--muted);font-size:12px;font-weight:700;letter-spacing:.03em;margin-right:4px}.results li.group-gap{margin-top:14px;border-top:0}.empty{color:var(--muted);font-size:14px}.meta{display:grid;grid-template-columns:112px 1fr;gap:8px 12px;font-size:14px}.meta dt{color:var(--muted)}.meta dd{margin:0;overflow-wrap:anywhere}.errorBox{display:none;margin-top:16px;padding:14px 16px;border:1px solid var(--red);border-radius:8px;background:var(--redSoft);color:var(--red)}.errorBox.show{display:block}footer{margin-top:22px;color:var(--muted);font-size:13px}
     @media(max-width:720px){.shell{padding:28px 18px 40px}header{margin-bottom:22px}form{grid-template-columns:1fr}button{width:100%}.grid{grid-template-columns:1fr}#summary.show{align-items:flex-start;flex-direction:column}.card{min-height:0}}
   </style>
 </head>
@@ -42,6 +42,7 @@
       <article class="card"><div class="cardHead"><div><h2>Nameservers</h2><p class="sub">NS records</p></div><span class="badge wait" id="nsBadge"><i class="dot"></i>Waiting</span></div><ul class="results mono" id="nsResults"><li class="empty">No results yet</li></ul></article>
       <article class="card"><div class="cardHead"><div><h2>Website</h2><p class="sub">@ and www address records</p></div><span class="badge wait" id="aBadge"><i class="dot"></i>Waiting</span></div><ul class="results mono" id="aResults"><li class="empty">No results yet</li></ul></article>
       <article class="card"><div class="cardHead"><div><h2>Mail routing</h2><p class="sub">MX records</p></div><span class="badge wait" id="mxBadge"><i class="dot"></i>Waiting</span></div><ul class="results mono" id="mxResults"><li class="empty">No results yet</li></ul></article>
+      <article class="card span2"><div class="cardHead"><div><h2>Resolution path</h2><p class="sub">Delegation and CNAME chain for @ and www</p></div><span class="badge wait" id="traceBadge"><i class="dot"></i>Waiting</span></div><ul class="results mono" id="traceResults"><li class="empty">No results yet</li></ul><p class="cardNote" id="traceNote"></p></article>
       <article class="card span2"><div class="cardHead"><div><h2>Common subdomains</h2><p class="sub">cpanel, webmail and mail address records</p></div><span class="badge wait" id="subBadge"><i class="dot"></i>Waiting</span></div><ul class="results mono" id="subResults"><li class="empty">No results yet</li></ul></article>
     </section>
     <footer>Uses RDAP and Google Public DNS-over-HTTPS. Results reflect public DNS and may be affected by caching. RDAP is not offered by every registry, so registration data may be unavailable for some TLDs.</footer>
@@ -58,13 +59,19 @@
   const validDomain = d => d.length <= 253 && /^(?=.{1,253}$)(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z]{2,63}$/i.test(d);
   const setBadge = (id, state, text) => { const el=$(id); el.className='badge '+state; el.innerHTML='<i class="dot"></i>'+esc(text); };
   const setList = (id, items, formatter=x=>x) => { $(id).innerHTML = items.length ? items.map(x=>'<li>'+formatter(x)+'</li>').join('') : '<li class="empty">No records found</li>'; };
-  const dns = async (name, type) => {
+  const RTYPE={A:1,NS:2,CNAME:5,AAAA:28,MX:15};
+  const RNAME={1:'A',2:'NS',5:'CNAME',28:'AAAA',15:'MX'};
+  // Raw answer records, in the order the resolver returned them. The order
+  // matters: a CNAME chain arrives as each hop followed by the final addresses.
+  const dnsRaw = async (name, type) => {
     const base = ['https:', '', 'dns.google', 'resolve'].join('/');
     const res = await fetch(base + '?name=' + encodeURIComponent(name) + '&type=' + type, {headers:{accept:'application/dns-json'}});
     if(!res.ok) throw new Error(`DNS service returned ${res.status}`);
     const body = await res.json();
-    return (body.Answer || []).filter(x => x.type === ({A:1,NS:2,AAAA:28,MX:15}[type])).map(x=>x.data);
+    return body.Answer || [];
   };
+  const dns = async (name, type) => (await dnsRaw(name, type)).filter(x => x.type === RTYPE[type]).map(x=>x.data);
+  const onlyType = (answers, type) => (answers||[]).filter(x=>x.type===RTYPE[type]).map(x=>x.data);
   const dateValue = (events, action) => { const e=(events||[]).find(x=>x.eventAction===action); return e ? new Date(e.eventDate).toLocaleDateString(undefined,{year:'numeric',month:'short',day:'numeric'}) : 'Not supplied'; };
   const entityName = (entities, role) => { const e=(entities||[]).find(x=>(x.roles||[]).includes(role)); return e?.vcardArray?.[1]?.find(x=>x[0]==='fn')?.[3] || 'Not supplied'; };
   async function rdap(domain){
@@ -84,15 +91,18 @@
     e.preventDefault(); const domain=cleanDomain(input.value); input.value=domain; $('errorBox').classList.remove('show');
     if(!validDomain(domain)){ $('errorBox').textContent='Please enter a valid root domain, e.g. example.com.'; $('errorBox').classList.add('show'); input.focus(); return; }
     button.disabled=true; button.textContent='Checking…'; $('statusline').classList.add('show'); $('summary').classList.remove('show');
-    ['rdap','ns','a','mx','sub'].forEach(x=>setBadge(x+'Badge','wait','Checking'));
+    ['rdap','ns','a','mx','sub','trace'].forEach(x=>setBadge(x+'Badge','wait','Checking'));
     try{
       // Fixed checks first, then two lookups (A + AAAA) per common subdomain.
       // They are appended so the fixed results can still be destructured by position.
+      // rootA/wwwA use dnsRaw so the CNAME chain survives for the resolution path;
+      // the plain address lists are derived from those same answers.
+      const tld=domain.split('.').slice(1).join('.');
       const subQueries=[];
       EXTRA_SUBS.forEach(s=>{ subQueries.push(dns(s+'.'+domain,'A'), dns(s+'.'+domain,'AAAA')); });
-      const settled = await Promise.allSettled([rdap(domain),dns(domain,'NS'),dns(domain,'A'),dns('www.'+domain,'A'),dns(domain,'AAAA'),dns('www.'+domain,'AAAA'),dns(domain,'MX'),...subQueries]);
-      const [registration, ns, rootA, wwwA, rootAAAA, wwwAAAA, mx] = settled;
-      const FIXED=7;
+      const settled = await Promise.allSettled([rdap(domain),dns(domain,'NS'),dnsRaw(domain,'A'),dnsRaw('www.'+domain,'A'),dns(domain,'AAAA'),dns('www.'+domain,'AAAA'),dns(domain,'MX'),dns('.','NS'),dns(tld,'NS'),...subQueries]);
+      const [registration, ns, rootA, wwwA, rootAAAA, wwwAAAA, mx, rootNS, tldNS] = settled;
+      const FIXED=9;
       const subResults=EXTRA_SUBS.map((name,i)=>{
         const a=settled[FIXED+i*2], aaaa=settled[FIXED+i*2+1];
         return {
@@ -111,7 +121,9 @@
         $('rdapResults').innerHTML=`<dt>Status</dt><dd class="empty">${esc(registration.reason.message)}</dd>`;
       }
       if(ns.status==='fulfilled'){ setList('nsResults',ns.value,x=>esc(x.replace(/\.$/,''))); setBadge('nsBadge',ns.value.length?'ok':'warn',ns.value.length?'Found':'Missing'); } else { setList('nsResults',[]); setBadge('nsBadge','bad','Error'); }
-      const root = rootA.status==='fulfilled' ? rootA.value : []; const www = wwwA.status==='fulfilled' ? wwwA.value : [];
+      const rootAnswers = rootA.status==='fulfilled' ? rootA.value : [];
+      const wwwAnswers  = wwwA.status==='fulfilled' ? wwwA.value : [];
+      const root = onlyType(rootAnswers,'A'); const www = onlyType(wwwAnswers,'A');
       const root6 = rootAAAA.status==='fulfilled' ? rootAAAA.value : []; const www6 = wwwAAAA.status==='fulfilled' ? wwwAAAA.value : [];
       // IPv4 (A) rows first, then IPv6 (AAAA) below, each tagged with its record type.
       // The first IPv6 row carries a gap class so the two groups read as separate
@@ -141,6 +153,33 @@
         if(nullMx){ $('mxResults').innerHTML='<li class="empty">Null MX — this domain explicitly declines mail (RFC 7505)</li>'; setBadge('mxBadge','warn','Declines mail'); }
         else { setList('mxResults',sorted,x=>`<strong>${x.priority}</strong>&nbsp;&nbsp;${esc(x.host)}`); setBadge('mxBadge',sorted.length?'ok':'warn',sorted.length?'Found':'Missing'); }
       } else { setList('mxResults',[]); setBadge('mxBadge','bad','Error'); }
+      // Resolution path: the delegation hierarchy (root -> TLD -> authoritative)
+      // followed by the answer chain for @ and www, including any CNAME hops.
+      const traceItems=[];
+      const step=(label,type,value,cls)=>traceItems.push({html:'<strong>'+esc(label)+'</strong> <span class="rtype">'+esc(type)+'</span> '+(cls?'<span class="'+cls+'">'+esc(value)+'</span>':esc(value)),gap:false});
+      const summarise=(list)=>list.length>1 ? list[0].replace(/\.$/,'')+' and '+(list.length-1)+' more' : (list[0]||'').replace(/\.$/,'');
+      if(rootNS.status==='fulfilled'&&rootNS.value.length) step('.','NS',summarise(rootNS.value));
+      else step('.','NS','lookup failed','dim');
+      if(tldNS.status==='fulfilled'&&tldNS.value.length) step(tld+'.','NS',summarise(tldNS.value));
+      else step(tld+'.','NS','no delegation found','dim');
+      if(ns.status==='fulfilled'&&ns.value.length) ns.value.forEach(h=>step(domain+'.','NS',h.replace(/\.$/,'')));
+      else step(domain+'.','NS','no nameservers found','dim');
+      // Answer chains. Each raw answer is shown in the order the resolver
+      // returned it, so a CNAME hop appears above the address it resolves to.
+      const chain=(label,answers,settledEntry)=>{
+        const first=traceItems.length;
+        if(settledEntry.status==='rejected'){ step(label,'A','lookup failed','dim'); }
+        else if(!answers.length){ step(label,'A','no answer','dim'); }
+        else answers.forEach(a=>step(a.name.replace(/\.$/,''),RNAME[a.type]||('TYPE'+a.type),String(a.data).replace(/\.$/,'')));
+        if(traceItems[first]) traceItems[first].gap=true;
+      };
+      chain('@',rootAnswers,rootA);
+      chain('www',wwwAnswers,wwwA);
+      $('traceResults').innerHTML=traceItems.map(it=>'<li'+(it.gap?' class="group-gap"':'')+'>'+it.html+'</li>').join('');
+      $('traceNote').textContent='Reconstructed from recursive lookups, not an iterative walk: a browser cannot query root or authoritative nameservers directly, so each step here is answered by a public resolver. Delegation records come from the child zone rather than the parent.';
+      const traceOk=ns.status==='fulfilled'&&ns.value.length&&(rootAnswers.length||wwwAnswers.length);
+      const traceErr=[rootNS,tldNS,rootA,wwwA].some(x=>x.status==='rejected');
+      setBadge('traceBadge',traceErr?'bad':(traceOk?'ok':'warn'),traceErr?'Error':(traceOk?'Traced':'Incomplete'));
       // Common subdomains: each name's A rows then its AAAA rows, with a gap
       // between names. A name that resolves to nothing is still listed, since
       // "not found" is itself a useful answer.
@@ -162,6 +201,7 @@
         registrationNote:registration.status==='fulfilled'?null:registration.reason.message,
         ns:ns.status==='fulfilled'?ns.value:[], nsError:ns.status==='rejected',
         root:root, www:www, root6:root6, www6:www6,
+        rootCname:onlyType(rootAnswers,'CNAME'), wwwCname:onlyType(wwwAnswers,'CNAME'),
         aErrors:[['@','A',rootA],['www','A',wwwA],['@','AAAA',rootAAAA],['www','AAAA',wwwAAAA]].filter(x=>x[2].status==='rejected').map(x=>x[0]+' '+x[1]),
         subs:subResults,
         mx:mxSorted, mxError:mx.status==='rejected'
@@ -204,11 +244,13 @@
     else if(!r.ns.length) L.push('; No NS records found');
     else r.ns.forEach(h=>L.push(rec('@','NS',fqdn(h))));
     L.push('');
+    // A CNAME cannot coexist with other records at the same name, so where one
+    // exists it replaces the address rows for that host.
     const addrs=[]
-      .concat(r.root.map(v=>rec('@','A',v)))
-      .concat(r.www.map(v=>rec('www','A',v)))
-      .concat(r.root6.map(v=>rec('@','AAAA',v)))
-      .concat(r.www6.map(v=>rec('www','AAAA',v)));
+      .concat((r.rootCname||[]).length ? (r.rootCname||[]).map(v=>rec('@','CNAME',fqdn(v)))
+                                       : [].concat(r.root.map(v=>rec('@','A',v))).concat(r.root6.map(v=>rec('@','AAAA',v))))
+      .concat((r.wwwCname||[]).length ? (r.wwwCname||[]).map(v=>rec('www','CNAME',fqdn(v)))
+                                      : [].concat(r.www.map(v=>rec('www','A',v))).concat(r.www6.map(v=>rec('www','AAAA',v))));
     if(addrs.length) addrs.forEach(l=>L.push(l));
     else L.push('; No A or AAAA records found');
     if(r.aErrors.length) L.push('; Failed address lookups: '+r.aErrors.join(', '));
