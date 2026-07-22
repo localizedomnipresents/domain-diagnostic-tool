@@ -9,8 +9,8 @@
     @media(prefers-color-scheme:dark){:root{--bg:#191919;--surface:#202020;--surface2:#383836;--text:#fff;--muted:rgba(255,255,255,.65);--border:rgba(255,255,255,.2);--blue:#5e9fe8;--blueSoft:rgba(94,159,232,.12);--green:#72bc8f;--greenSoft:rgba(114,188,143,.12);--red:#e97366;--redSoft:rgba(233,115,102,.12);--orange:#de9255;--orangeSoft:rgba(222,146,85,.12);--shadow:none}}
     *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif} .shell{width:min(1040px,100%);margin:auto;padding:40px 28px 56px} header{display:flex;align-items:flex-start;justify-content:space-between;gap:24px;margin-bottom:28px}.eyebrow{color:var(--blue);font-size:14px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;margin:0 0 6px}h1{font-size:clamp(30px,5vw,46px);line-height:1.08;letter-spacing:-.035em;margin:0 0 10px}header p{margin:0;color:var(--muted);max-width:620px}
     form{display:grid;grid-template-columns:1fr auto;gap:12px;padding:12px;background:var(--surface);border:1px solid var(--border);border-radius:12px;box-shadow:var(--shadow)}label{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}input{min-width:0;width:100%;height:48px;border:1px solid var(--border);border-radius:8px;background:var(--bg);color:var(--text);font:inherit;padding:0 14px;outline:none}input:focus{border-color:var(--blue);box-shadow:0 0 0 3px var(--blueSoft)}button{height:48px;border:0;border-radius:8px;padding:0 22px;background:var(--blue);color:white;font:700 15px/1 system-ui;cursor:pointer}button:hover{filter:brightness(.96)}button:disabled{opacity:.65;cursor:wait}button:focus-visible,a:focus-visible{outline:3px solid var(--blue);outline-offset:3px}.helper{font-size:14px;color:var(--muted);margin:10px 4px 0}.statusline{display:none;align-items:center;gap:10px;margin:22px 0 0;color:var(--muted)}.statusline.show{display:flex}.spinner{width:18px;height:18px;border:2px solid var(--border);border-top-color:var(--blue);border-radius:50%;animation:spin .8s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}@media(prefers-reduced-motion:reduce){.spinner{animation:none;border-top-color:var(--border)}}
-    #summary{display:none;margin-top:24px;padding:16px 18px;border:1px solid var(--border);border-radius:10px;background:var(--surface)}#summary.show{display:flex;align-items:center;justify-content:space-between;gap:16px}#summary strong{display:block;font-size:18px}#summary span{color:var(--muted);font-size:14px}#whoisLink{color:var(--blue);font-weight:700;text-decoration:none;white-space:nowrap}#whoisLink:hover{text-decoration:underline}
-    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:16px}.card{border:1px solid var(--border);border-radius:12px;background:var(--surface);padding:20px;min-height:180px}.cardHead{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:16px}.card h2{font-size:18px;margin:0}.card .sub{font-size:14px;color:var(--muted);margin:2px 0 0}.badge{display:inline-flex;align-items:center;gap:6px;padding:4px 8px;border-radius:999px;font-size:12px;font-weight:750}.badge.ok{color:var(--green);background:var(--greenSoft)}.badge.bad{color:var(--red);background:var(--redSoft)}.badge.warn{color:var(--orange);background:var(--orangeSoft)}.badge.wait{color:var(--muted);background:var(--surface2)}.dot{width:7px;height:7px;border-radius:50%;background:currentColor}.results{margin:0;padding:0;list-style:none}.results li{padding:8px 0;border-top:1px solid var(--border);overflow-wrap:anywhere}.results li:first-child{border-top:0;padding-top:0}.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:14px}.empty{color:var(--muted);font-size:14px}.meta{display:grid;grid-template-columns:112px 1fr;gap:8px 12px;font-size:14px}.meta dt{color:var(--muted)}.meta dd{margin:0;overflow-wrap:anywhere}.errorBox{display:none;margin-top:16px;padding:14px 16px;border:1px solid var(--red);border-radius:8px;background:var(--redSoft);color:var(--red)}.errorBox.show{display:block}footer{margin-top:22px;color:var(--muted);font-size:13px}
+    #summary{display:none;margin-top:24px;padding:16px 18px;border:1px solid var(--border);border-radius:10px;background:var(--surface)}#summary.show{display:flex;align-items:center;justify-content:space-between;gap:16px}#summary strong{display:block;font-size:18px}#summary span{color:var(--muted);font-size:14px}#whoisLink{color:var(--blue);font-weight:700;text-decoration:none;white-space:nowrap}#whoisLink:hover{text-decoration:underline}.summaryActions{display:flex;align-items:center;gap:16px;flex:none;flex-wrap:wrap}.btnGhost{width:auto;min-height:38px;padding:0 14px;background:var(--bg);color:var(--text);border:1px solid var(--border);border-radius:8px;font:700 14px/1 system-ui;cursor:pointer;white-space:nowrap}.btnGhost:hover{background:var(--surface2);filter:none}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:16px}.card{border:1px solid var(--border);border-radius:12px;background:var(--surface);padding:20px;min-height:180px}.cardHead{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:16px}.card h2{font-size:18px;margin:0}.card .sub{font-size:14px;color:var(--muted);margin:2px 0 0}.badge{display:inline-flex;align-items:center;gap:6px;padding:4px 8px;border-radius:999px;font-size:12px;font-weight:750}.badge.ok{color:var(--green);background:var(--greenSoft)}.badge.bad{color:var(--red);background:var(--redSoft)}.badge.warn{color:var(--orange);background:var(--orangeSoft)}.badge.wait{color:var(--muted);background:var(--surface2)}.dot{width:7px;height:7px;border-radius:50%;background:currentColor}.results{margin:0;padding:0;list-style:none}.results li{padding:8px 0;border-top:1px solid var(--border);overflow-wrap:anywhere}.results li:first-child{border-top:0;padding-top:0}.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:14px}.rtype{color:var(--muted);font-size:12px;font-weight:700;letter-spacing:.03em;margin-right:4px}.results li.group-gap{margin-top:14px;border-top:0}.empty{color:var(--muted);font-size:14px}.meta{display:grid;grid-template-columns:112px 1fr;gap:8px 12px;font-size:14px}.meta dt{color:var(--muted)}.meta dd{margin:0;overflow-wrap:anywhere}.errorBox{display:none;margin-top:16px;padding:14px 16px;border:1px solid var(--red);border-radius:8px;background:var(--redSoft);color:var(--red)}.errorBox.show{display:block}footer{margin-top:22px;color:var(--muted);font-size:13px}
     @media(max-width:720px){.shell{padding:28px 18px 40px}header{margin-bottom:22px}form{grid-template-columns:1fr}button{width:100%}.grid{grid-template-columns:1fr}#summary.show{align-items:flex-start;flex-direction:column}.card{min-height:0}}
   </style>
 </head>
@@ -31,13 +31,16 @@
 
     <section id="summary" aria-live="polite">
       <div><strong id="summaryDomain"></strong><span id="summaryText"></span></div>
-      <a id="whoisLink" href="#" target="_blank" rel="noopener">Open full WHOIS ↗</a>
+      <div class="summaryActions">
+        <button id="copyZone" type="button" class="btnGhost">Copy as zone file</button>
+        <a id="whoisLink" href="#" target="_blank" rel="noopener">Open full WHOIS ↗</a>
+      </div>
     </section>
 
     <section class="grid" id="resultsGrid" aria-label="Lookup results">
       <article class="card"><div class="cardHead"><div><h2>Registration</h2><p class="sub">RDAP / WHOIS data</p></div><span class="badge wait" id="rdapBadge"><i class="dot"></i>Waiting</span></div><dl class="meta" id="rdapResults"><dt>Status</dt><dd class="empty">Run a lookup to begin</dd></dl></article>
       <article class="card"><div class="cardHead"><div><h2>Nameservers</h2><p class="sub">NS records</p></div><span class="badge wait" id="nsBadge"><i class="dot"></i>Waiting</span></div><ul class="results mono" id="nsResults"><li class="empty">No results yet</li></ul></article>
-      <article class="card"><div class="cardHead"><div><h2>Website</h2><p class="sub">@ and www A records</p></div><span class="badge wait" id="aBadge"><i class="dot"></i>Waiting</span></div><ul class="results mono" id="aResults"><li class="empty">No results yet</li></ul></article>
+      <article class="card"><div class="cardHead"><div><h2>Website</h2><p class="sub">@ and www address records</p></div><span class="badge wait" id="aBadge"><i class="dot"></i>Waiting</span></div><ul class="results mono" id="aResults"><li class="empty">No results yet</li></ul></article>
       <article class="card"><div class="cardHead"><div><h2>Mail routing</h2><p class="sub">MX records</p></div><span class="badge wait" id="mxBadge"><i class="dot"></i>Waiting</span></div><ul class="results mono" id="mxResults"><li class="empty">No results yet</li></ul></article>
     </section>
     <footer>Uses RDAP and Google Public DNS-over-HTTPS. Results reflect public DNS and may be affected by caching. RDAP is not offered by every registry, so registration data may be unavailable for some TLDs.</footer>
@@ -46,6 +49,7 @@
 (() => {
   const $ = id => document.getElementById(id);
   const form = $('lookupForm'), input = $('domain'), button = $('runButton');
+  let lastResults = null;
   const esc = value => String(value ?? '').replace(/[&<>'"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
   const cleanDomain = raw => raw.trim().toLowerCase().replace(/^https?:\/\//,'').split(/[\/:?#]/)[0].replace(/^www\./,'').replace(/\.$/,'');
   const validDomain = d => d.length <= 253 && /^(?=.{1,253}$)(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z]{2,63}$/i.test(d);
@@ -56,7 +60,7 @@
     const res = await fetch(base + '?name=' + encodeURIComponent(name) + '&type=' + type, {headers:{accept:'application/dns-json'}});
     if(!res.ok) throw new Error(`DNS service returned ${res.status}`);
     const body = await res.json();
-    return (body.Answer || []).filter(x => x.type === ({A:1,NS:2,MX:15}[type])).map(x=>x.data);
+    return (body.Answer || []).filter(x => x.type === ({A:1,NS:2,AAAA:28,MX:15}[type])).map(x=>x.data);
   };
   const dateValue = (events, action) => { const e=(events||[]).find(x=>x.eventAction===action); return e ? new Date(e.eventDate).toLocaleDateString(undefined,{year:'numeric',month:'short',day:'numeric'}) : 'Not supplied'; };
   const entityName = (entities, role) => { const e=(entities||[]).find(x=>(x.roles||[]).includes(role)); return e?.vcardArray?.[1]?.find(x=>x[0]==='fn')?.[3] || 'Not supplied'; };
@@ -79,7 +83,7 @@
     button.disabled=true; button.textContent='Checking…'; $('statusline').classList.add('show'); $('summary').classList.remove('show');
     ['rdap','ns','a','mx'].forEach(x=>setBadge(x+'Badge','wait','Checking'));
     try{
-      const [registration, ns, rootA, wwwA, mx] = await Promise.allSettled([rdap(domain),dns(domain,'NS'),dns(domain,'A'),dns('www.'+domain,'A'),dns(domain,'MX')]);
+      const [registration, ns, rootA, wwwA, rootAAAA, wwwAAAA, mx] = await Promise.allSettled([rdap(domain),dns(domain,'NS'),dns(domain,'A'),dns('www.'+domain,'A'),dns(domain,'AAAA'),dns('www.'+domain,'AAAA'),dns(domain,'MX')]);
       if(registration.status==='fulfilled'){
         const r=registration.value; setBadge('rdapBadge','ok','Found');
         $('rdapResults').innerHTML=`<dt>Registrar</dt><dd>${esc(entityName(r.entities,'registrar'))}</dd><dt>Registered</dt><dd>${esc(dateValue(r.events,'registration'))}</dd><dt>Expires</dt><dd>${esc(dateValue(r.events,'expiration'))}</dd><dt>Status</dt><dd>${esc((r.status||[]).join(', ')||'Not supplied')}</dd>`;
@@ -90,18 +94,49 @@
       }
       if(ns.status==='fulfilled'){ setList('nsResults',ns.value,x=>esc(x.replace(/\.$/,''))); setBadge('nsBadge',ns.value.length?'ok':'warn',ns.value.length?'Found':'Missing'); } else { setList('nsResults',[]); setBadge('nsBadge','bad','Error'); }
       const root = rootA.status==='fulfilled' ? rootA.value : []; const www = wwwA.status==='fulfilled' ? wwwA.value : [];
-      const aItems=[...root.map(x=>`<strong>@</strong>&nbsp;&nbsp; ${esc(x)}`),...www.map(x=>`<strong>www</strong> ${esc(x)}`)];
-      setList('aResults',aItems,x=>x); const aError=rootA.status==='rejected'||wwwA.status==='rejected'; setBadge('aBadge',aError?'bad':(root.length&&www.length?'ok':'warn'),aError?'Error':(root.length&&www.length?'Both found':'Incomplete'));
+      const root6 = rootAAAA.status==='fulfilled' ? rootAAAA.value : []; const www6 = wwwAAAA.status==='fulfilled' ? wwwAAAA.value : [];
+      // IPv4 (A) rows first, then IPv6 (AAAA) below, each tagged with its record type.
+      // The first IPv6 row carries a gap class so the two groups read as separate
+      // blocks — but only when there are IPv4 rows above it to separate from.
+      const addrRow=(host,type,value)=>`<strong>${host}</strong> <span class="rtype">${type}</span> ${esc(value)}`;
+      const v4=[...root.map(x=>addrRow('@','A',x)),...www.map(x=>addrRow('www','A',x))];
+      const v6=[...root6.map(x=>addrRow('@','AAAA',x)),...www6.map(x=>addrRow('www','AAAA',x))];
+      const aItems=[
+        ...v4.map(html=>({html:html,gap:false})),
+        ...v6.map((html,i)=>({html:html,gap:i===0&&v4.length>0}))
+      ];
+      $('aResults').innerHTML = aItems.length
+        ? aItems.map(it=>'<li'+(it.gap?' class="group-gap"':'')+'>'+it.html+'</li>').join('')
+        : '<li class="empty">No records found</li>';
+      const aError=[rootA,wwwA,rootAAAA,wwwAAAA].some(x=>x.status==='rejected');
+      // A host counts as resolving if it has either an A or an AAAA record, so
+      // IPv6-only sites are not reported as incomplete.
+      const bothResolve=(root.length||root6.length)&&(www.length||www6.length);
+      setBadge('aBadge',aError?'bad':(bothResolve?'ok':'warn'),aError?'Error':(bothResolve?'Both found':'Incomplete'));
+      let mxSorted=[];
       if(mx.status==='fulfilled'){
         const sorted=mx.value.map(x=>{const m=x.match(/^(\d+)\s+(.+)$/);return {priority:m?+m[1]:0,host:(m?m[2]:x).replace(/\.$/,'')}}).sort((a,b)=>a.priority-b.priority);
+        mxSorted=sorted;
         // Null MX (RFC 7505): a single record of "0 ." means the domain
         // explicitly declines mail — report that rather than an empty host.
         const nullMx=sorted.length===1&&sorted[0].priority===0&&sorted[0].host==='';
         if(nullMx){ $('mxResults').innerHTML='<li class="empty">Null MX — this domain explicitly declines mail (RFC 7505)</li>'; setBadge('mxBadge','warn','Declines mail'); }
         else { setList('mxResults',sorted,x=>`<strong>${x.priority}</strong>&nbsp;&nbsp;${esc(x.host)}`); setBadge('mxBadge',sorted.length?'ok':'warn',sorted.length?'Found':'Missing'); }
       } else { setList('mxResults',[]); setBadge('mxBadge','bad','Error'); }
-      const succeeded=[registration,ns,rootA,wwwA,mx].filter(x=>x.status==='fulfilled').length;
-      $('summaryDomain').textContent=domain; $('summaryText').textContent=`${succeeded} of 5 checks completed successfully`;
+      const allChecks=[registration,ns,rootA,wwwA,rootAAAA,wwwAAAA,mx];
+      const succeeded=allChecks.filter(x=>x.status==='fulfilled').length;
+      // Snapshot the results so the zone-file export reflects exactly what is on screen.
+      lastResults={
+        domain:domain,
+        registration:registration.status==='fulfilled'?registration.value:null,
+        registrationNote:registration.status==='fulfilled'?null:registration.reason.message,
+        ns:ns.status==='fulfilled'?ns.value:[], nsError:ns.status==='rejected',
+        root:root, www:www, root6:root6, www6:www6,
+        aErrors:[['@','A',rootA],['www','A',wwwA],['@','AAAA',rootAAAA],['www','AAAA',wwwAAAA]].filter(x=>x[2].status==='rejected').map(x=>x[0]+' '+x[1]),
+        mx:mxSorted, mxError:mx.status==='rejected'
+      };
+      $('copyZone').textContent='Copy as zone file';
+      $('summaryDomain').textContent=domain; $('summaryText').textContent=`${succeeded} of ${allChecks.length} checks completed successfully`;
       $('whoisLink').href=['https:', '', 'who.is', 'whois', encodeURIComponent(domain)].join('/'); $('summary').classList.add('show');
     } catch(err){
       $('errorBox').textContent='Something went wrong while processing the results: '+(err && err.message ? err.message : String(err));
@@ -109,6 +144,70 @@
     } finally {
       $('statusline').classList.remove('show'); button.disabled=false; button.textContent='Run checks';
     }
+  });
+
+  /* ---------- Zone file export ---------- */
+  // Names in a zone file must be fully qualified (trailing dot) or relative to
+  // $ORIGIN. Display strips the trailing dot, so it is restored here.
+  const fqdn = h => { const s=String(h||'').trim(); return s ? (s.endsWith('.') ? s : s+'.') : '.'; };
+  const rec = (name,type,value) => name+'\tIN\t'+type+'\t'+value;
+  function buildZoneFile(r){
+    const L=[];
+    L.push('; Domain diagnostics — '+r.domain);
+    L.push('; Generated '+new Date().toISOString());
+    if(r.registration){
+      L.push('; Registrar: '+entityName(r.registration.entities,'registrar'));
+      L.push('; Registered: '+dateValue(r.registration.events,'registration')+'  Expires: '+dateValue(r.registration.events,'expiration'));
+    } else {
+      L.push('; Registration: '+(r.registrationNote||'unavailable'));
+    }
+    // The TTL is a placeholder: public resolvers report the remaining cache time
+    // for a record, not the authoritative TTL configured in the zone.
+    L.push('; TTL below is a placeholder — resolvers report remaining cache time,');
+    L.push('; not the authoritative zone TTL. Adjust before using this file.');
+    L.push('');
+    L.push('$ORIGIN '+fqdn(r.domain));
+    L.push('$TTL 3600');
+    L.push('');
+    if(r.nsError) L.push('; NS lookup failed');
+    else if(!r.ns.length) L.push('; No NS records found');
+    else r.ns.forEach(h=>L.push(rec('@','NS',fqdn(h))));
+    L.push('');
+    const addrs=[]
+      .concat(r.root.map(v=>rec('@','A',v)))
+      .concat(r.www.map(v=>rec('www','A',v)))
+      .concat(r.root6.map(v=>rec('@','AAAA',v)))
+      .concat(r.www6.map(v=>rec('www','AAAA',v)));
+    if(addrs.length) addrs.forEach(l=>L.push(l));
+    else L.push('; No A or AAAA records found');
+    if(r.aErrors.length) L.push('; Failed address lookups: '+r.aErrors.join(', '));
+    L.push('');
+    if(r.mxError) L.push('; MX lookup failed');
+    else if(!r.mx.length) L.push('; No MX records found');
+    else if(r.mx.length===1&&r.mx[0].priority===0&&r.mx[0].host==='') L.push(rec('@','MX','0 .')+'\t; Null MX (RFC 7505) — domain declines mail');
+    else r.mx.forEach(m=>L.push(rec('@','MX',m.priority+' '+fqdn(m.host))));
+    return L.join('\n')+'\n';
+  }
+  async function copyText(text){
+    try{ await navigator.clipboard.writeText(text); return true; }
+    catch(e){
+      // Fallback for browsers or contexts where the async clipboard API is
+      // unavailable (for example a page opened directly from disk).
+      try{
+        const ta=document.createElement('textarea');
+        ta.value=text; ta.setAttribute('readonly','');
+        ta.style.position='fixed'; ta.style.top='-1000px';
+        document.body.appendChild(ta); ta.select();
+        const ok=document.execCommand('copy'); ta.remove(); return ok;
+      }catch(e2){ return false; }
+    }
+  }
+  $('copyZone').addEventListener('click', async () => {
+    if(!lastResults) return;
+    const btn=$('copyZone');
+    const ok=await copyText(buildZoneFile(lastResults));
+    btn.textContent = ok ? 'Copied ✓' : 'Copy failed';
+    setTimeout(()=>{ btn.textContent='Copy as zone file'; }, 2000);
   });
 })();
 </script>
